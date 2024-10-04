@@ -20,10 +20,12 @@ const App = () => {
 
   // Fetch all users from the server
 
+
   const fetchUsers = async () => {
     try {
       const response = await axios.get('https://backend-web-pearl.vercel.app/api/items/');
       setUsers(response.data);
+      
       
     } catch (error) {
       console.error('Error fetching users:', error);
