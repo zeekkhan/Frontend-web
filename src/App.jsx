@@ -38,7 +38,7 @@ const App = () => {
   }, []);
 
   // Open dialog for adding/editing user
-  
+
   const handleClickOpen = () => {
     setName('');
     setEmail('');
@@ -47,6 +47,7 @@ const App = () => {
   };
 
   // Close dialog
+  
   const handleClose = () => {
     setOpen(false);
   
