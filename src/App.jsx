@@ -85,7 +85,7 @@ const App = () => {
   };
 
   // Edit user
-  
+
   const handleEdit = (user) => {
   
     setName(user.name);
@@ -95,7 +95,9 @@ const App = () => {
   };
 
   // Delete user
+
   const handleDelete = async (id) => {
+  
     try {
       await axios.delete(`https://backend-web-pearl.vercel.app/api/items/${id}`);
       fetchUsers();
