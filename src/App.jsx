@@ -10,7 +10,9 @@ import {
 } from '@mui/material';
 
 const App = () => {
+
   const [users, setUsers] = useState([]);
+  
   const [open, setOpen] = useState(false);
   const [name, setName] = useState('');
   const [email, setEmail] = useState('');
