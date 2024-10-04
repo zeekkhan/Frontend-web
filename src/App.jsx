@@ -118,6 +118,7 @@ const App = () => {
           <Button variant="contained" color="primary" onClick={handleClickOpen}>
             Add User
           </Button>
+          
         </Box>
         <TableContainer component={Paper}>
           <Table>
