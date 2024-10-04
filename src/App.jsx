@@ -26,7 +26,7 @@ const App = () => {
       const response = await axios.get('https://backend-web-pearl.vercel.app/api/items/');
       setUsers(response.data);
       
-      
+
     } catch (error) {
       console.error('Error fetching users:', error);
     }
@@ -38,6 +38,7 @@ const App = () => {
   }, []);
 
   // Open dialog for adding/editing user
+  
   const handleClickOpen = () => {
     setName('');
     setEmail('');
