@@ -67,11 +67,13 @@ const App = () => {
         fetchUsers();
       } catch (error) {
       
-        
+
         console.error('Error updating user:', error);
       }
     } else {
+
       // Create new user
+      
       try {
         await axios.post('https://backend-web-pearl.vercel.app/api/items/', { name, email });
         fetchUsers();
@@ -83,6 +85,7 @@ const App = () => {
   };
 
   // Edit user
+  
   const handleEdit = (user) => {
   
     setName(user.name);
